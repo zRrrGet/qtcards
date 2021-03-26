@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+     <widget class="QLabel" name="labelWelcome">
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Выберите профиль в настройках</string>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="labelCorrect">
+      <property name="font">
+       <font>
+        <pointsize>21</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="labelWord">
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+     <widget class="QLabel" name="labelStats">
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Словарь не выбран</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="editAns"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonStart">
+      <property name="text">
+       <string>Начать сессию</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="optionSetCount"/>
+    <addaction name="optionProfile"/>
+    <addaction name="optionDict"/>
+    <addaction name="separator"/>
+    <addaction name="optionProfileExit"/>
+    <addaction name="optionExit"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="optionProfile">
+   <property name="text">
+    <string>Профиль</string>
+   </property>
+  </action>
+  <action name="optionDict">
+   <property name="text">
+    <string>Словарь</string>
+   </property>
+  </action>
+  <action name="optionExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="optionSetCount">
+   <property name="text">
+    <string>Кол-во слов за сессию</string>
+   </property>
+  </action>
+  <action name="optionProfileExit">
+   <property name="text">
+    <string>Выйти из профиля</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
